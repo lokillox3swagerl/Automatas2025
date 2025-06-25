@@ -1,0 +1,55 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VarDecl",
+      "name": "x",
+      "value": {
+        "type": "Number",
+        "value": 5
+      }
+    },
+    {
+      "type": "VarDecl",
+      "name": "y",
+      "value": {
+        "type": "Number",
+        "value": 10
+      }
+    },
+    {
+      "type": "If",
+      "condition": {
+        "type": "BinOp",
+        "op": "<",
+        "left": {
+          "type": "Variable",
+          "name": "x"
+        },
+        "right": {
+          "type": "Variable",
+          "name": "y"
+        }
+      },
+      "then": [
+        {
+          "type": "Assignment",
+          "name": "x",
+          "value": {
+            "type": "BinOp",
+            "op": "+",
+            "left": {
+              "type": "Variable",
+              "name": "x"
+            },
+            "right": {
+              "type": "Number",
+              "value": 1
+            }
+          }
+        }
+      ],
+      "else": null
+    }
+  ]
+}
