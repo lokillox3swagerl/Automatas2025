@@ -11,6 +11,14 @@
     },
     {
       "type": "VarDecl",
+      "name": "x",
+      "value": {
+        "type": "Number",
+        "value": 6
+      }
+    },
+    {
+      "type": "VarDecl",
       "name": "y",
       "value": {
         "type": "Number",
