@@ -49,7 +49,8 @@ def analyze_node(node, table):
 
     elif node_type == "Number":
         return "int"
-
+    elif node_type == "String":
+        return "str"
     elif node_type == "Variable":
         return table.get(node["name"])
 
