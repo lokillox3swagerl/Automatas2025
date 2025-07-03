@@ -1,0 +1,37 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VarDecl",
+      "name": "x",
+      "value": {
+        "type": "Number",
+        "value": 5
+      }
+    },
+    {
+      "type": "VarDecl",
+      "name": "y",
+      "value": {
+        "type": "String",
+        "value": "Hola"
+      }
+    },
+    {
+      "type": "Assignment",
+      "name": "x",
+      "value": {
+        "type": "BinOp",
+        "op": "+",
+        "left": {
+          "type": "Variable",
+          "name": "x"
+        },
+        "right": {
+          "type": "Variable",
+          "name": "y"
+        }
+      }
+    }
+  ]
+}
